@@ -1,3 +1,9 @@
+# state threads library
+
+    state threads library(以下简称st)是一个基于setjmp/longjmp实现的C语言版用户线程库或协程库（user level thread）即：
+    调度单位减小到函数，上下文切换不需要内核参与，不存在系统调用。上下文切换开销降到最低，系统调用降到最低，没有锁竞争，没有
+    信号处理。保留了程序对请求的线性处理逻辑，提高了程序的开发效率，可扩展性和可维护性。
+
 WELCOME!
 
 The State Threads Library is a small application library which provides
